@@ -41,7 +41,7 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath) as! CityCell
         
         cell.cityImage.backgroundColor = .green
-        cell.cityName.text = "Manchester"
+        cell.cityName.text = "MANCHESTER"
         cell.cityGamesNumber.text = "Three Games"
     
     
