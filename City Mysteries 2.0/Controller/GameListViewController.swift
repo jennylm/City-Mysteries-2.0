@@ -6,6 +6,7 @@
 //  Copyright © 2019 Jenny Muter. All rights reserved.
 //
 import Foundation
+import RealmSwift
 
 import UIKit
 

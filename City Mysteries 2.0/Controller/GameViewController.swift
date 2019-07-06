@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class GameViewController: UIViewController, UIScrollViewDelegate {
     
