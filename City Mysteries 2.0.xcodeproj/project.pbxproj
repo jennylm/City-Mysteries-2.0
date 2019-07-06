@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		19B1F3E322D0D5FC0011E2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F3E222D0D5FC0011E2E7 /* AppDelegate.swift */; };
-		19B1F3E522D0D5FC0011E2E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F3E422D0D5FC0011E2E7 /* ViewController.swift */; };
+		19B1F3E522D0D5FC0011E2E7 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F3E422D0D5FC0011E2E7 /* CityViewController.swift */; };
 		19B1F3E822D0D5FC0011E2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B1F3E622D0D5FC0011E2E7 /* Main.storyboard */; };
 		19B1F3EA22D0D5FD0011E2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B1F3E922D0D5FD0011E2E7 /* Assets.xcassets */; };
 		19B1F3ED22D0D5FD0011E2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B1F3EB22D0D5FD0011E2E7 /* LaunchScreen.storyboard */; };
+		19B1F3FA22D0DAAA0011E2E7 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B1F3F922D0DAAA0011E2E7 /* CityCell.xib */; };
+		19B1F3FC22D0DB0D0011E2E7 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F3FB22D0DB0D0011E2E7 /* CityCell.swift */; };
+		19B1F3FE22D0E1B00011E2E7 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F3FD22D0E1B00011E2E7 /* GameListViewController.swift */; };
+		19B1F40022D0E2020011E2E7 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B1F3FF22D0E2020011E2E7 /* GameCell.xib */; };
+		19B1F40222D0E21B0011E2E7 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F40122D0E21B0011E2E7 /* GameCell.swift */; };
+		19B1F40422D0E7D50011E2E7 /* GameDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B1F40322D0E7D50011E2E7 /* GameDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19B1F3DF22D0D5FC0011E2E7 /* City Mysteries 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Mysteries 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B1F3E222D0D5FC0011E2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19B1F3E422D0D5FC0011E2E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19B1F3E422D0D5FC0011E2E7 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		19B1F3E722D0D5FC0011E2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19B1F3E922D0D5FD0011E2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19B1F3EC22D0D5FD0011E2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19B1F3EE22D0D5FD0011E2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B1F3F922D0DAAA0011E2E7 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		19B1F3FB22D0DB0D0011E2E7 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		19B1F3FD22D0E1B00011E2E7 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		19B1F3FF22D0E2020011E2E7 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		19B1F40122D0E21B0011E2E7 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		19B1F40322D0E7D50011E2E7 /* GameDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,44 @@
 		19B1F3E122D0D5FC0011E2E7 /* City Mysteries 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				19B1F3F822D0DA610011E2E7 /* Controller */,
+				19B1F3F722D0DA5C0011E2E7 /* View */,
+				19B1F3F622D0DA560011E2E7 /* Model */,
 				19B1F3E222D0D5FC0011E2E7 /* AppDelegate.swift */,
-				19B1F3E422D0D5FC0011E2E7 /* ViewController.swift */,
-				19B1F3E622D0D5FC0011E2E7 /* Main.storyboard */,
 				19B1F3E922D0D5FD0011E2E7 /* Assets.xcassets */,
 				19B1F3EB22D0D5FD0011E2E7 /* LaunchScreen.storyboard */,
 				19B1F3EE22D0D5FD0011E2E7 /* Info.plist */,
 			);
 			path = "City Mysteries 2.0";
+			sourceTree = "<group>";
+		};
+		19B1F3F622D0DA560011E2E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19B1F3F722D0DA5C0011E2E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19B1F3E622D0D5FC0011E2E7 /* Main.storyboard */,
+				19B1F3F922D0DAAA0011E2E7 /* CityCell.xib */,
+				19B1F3FF22D0E2020011E2E7 /* GameCell.xib */,
+				19B1F40122D0E21B0011E2E7 /* GameCell.swift */,
+				19B1F3FB22D0DB0D0011E2E7 /* CityCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19B1F3F822D0DA610011E2E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19B1F3E422D0D5FC0011E2E7 /* CityViewController.swift */,
+				19B1F3FD22D0E1B00011E2E7 /* GameListViewController.swift */,
+				19B1F40322D0E7D50011E2E7 /* GameDescriptionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B1F3ED22D0D5FD0011E2E7 /* LaunchScreen.storyboard in Resources */,
+				19B1F40022D0E2020011E2E7 /* GameCell.xib in Resources */,
 				19B1F3EA22D0D5FD0011E2E7 /* Assets.xcassets in Resources */,
+				19B1F3FA22D0DAAA0011E2E7 /* CityCell.xib in Resources */,
 				19B1F3E822D0D5FC0011E2E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B1F3E522D0D5FC0011E2E7 /* ViewController.swift in Sources */,
+				19B1F40222D0E21B0011E2E7 /* GameCell.swift in Sources */,
+				19B1F3FE22D0E1B00011E2E7 /* GameListViewController.swift in Sources */,
+				19B1F3E522D0D5FC0011E2E7 /* CityViewController.swift in Sources */,
 				19B1F3E322D0D5FC0011E2E7 /* AppDelegate.swift in Sources */,
+				19B1F3FC22D0DB0D0011E2E7 /* CityCell.swift in Sources */,
+				19B1F40422D0E7D50011E2E7 /* GameDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
