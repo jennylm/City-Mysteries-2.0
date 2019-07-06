@@ -10,6 +10,15 @@ import UIKit
 import RealmSwift
 
 class CityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let realm = try! Realm()
+    
+    var cityArray : Results<City>?
+    
+//    @IBAction func addButton(_ sender: Any) {
+//    }
+//    
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var cityTableView: UITableView!
     
@@ -30,10 +39,13 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cityTableView.register(UINib(nibName: "CityCell", bundle: nil), forCellReuseIdentifier: "cityCell")
         
+        loadItems()
         configureTableView()
         
         cityTableView.separatorStyle = .singleLine
+        //getFilePath()
     }
+    
     
     // Declare CellForRowAtIndexPath
     
@@ -42,8 +54,9 @@ class CityViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath) as! CityCell
         
         cell.cityImage.backgroundColor = .green
-        cell.cityName.text = "MANCHESTER"
-        cell.cityGamesNumber.text = "Three Games"
+        cell.cityName.text = cityArray?[indexPath.row].name ?? "No Cities Added"
+        cell.cityGamesNumber.text = "\(cityArray?[indexPath.row].numberOfGames! ?? "No") Mysteries"
+        cell.cityImage.image = UIImage(data: cityArray?[indexPath.row].picture! as! Data)
     
     
     return cell
@@ -75,6 +88,57 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let destinationVC = segue.destination as! GameListViewController
 
     }
+    
+    //Get Realm
+    
+    func getFilePath() -> URL? {
+        let realm = try! Realm()
+        //print(realm.configuration.fileURL)
+        return realm.configuration.fileURL
+        
+    }
+    
+    
+//Data Manipulation Methods
+    
+    func save(city: City) {
+        
+        do {
+            try realm.write {
+                realm.add(city)
+            }
+        } catch {
+            print("Error saving category\(error)")
+        }
+    }
+    
+    func loadItems() {
+        
+        cityArray = realm.objects(City.self)
+        
+        cityTableView.reloadData()
+    }
+    
+    
+//    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+//        
+//        print("Bar Button Pressed")
+//        
+//        let newCity = City()
+//        newCity.cityID = 5000
+//        newCity.name = "Bristol"
+//        newCity.numberOfGames = "Four"
+//        
+//        
+//        if let img = UIImage(named: "lovesquare.png") {
+//            newCity.picture = img.pngData() as NSData?
+//            
+//        }
+//        self.save(city: newCity)
+//        print(newCity.name)
+//    
+//    }
+    
 }
 
 

@@ -32,7 +32,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Okd-qf-NTP"/>
+                    <navigationItem key="navigationItem" id="Okd-qf-NTP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="q9b-dj-c8Y">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="yXu-qZ-zpB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cityTableView" destination="5H3-bP-UdZ" id="ADc-v8-jxj"/>
                         <segue destination="OX5-gu-vZ4" kind="show" identifier="goToItems" id="MoA-GT-uqf"/>

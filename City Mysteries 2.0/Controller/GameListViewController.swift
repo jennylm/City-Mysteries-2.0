@@ -44,7 +44,7 @@ class GameListViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.gameImage.backgroundColor = .blue
         cell.gameName.text = "The Medlock Murder"
-        cell.gameDescription.text = "A diamond has been stolen. Can you find it?"
+        cell.gameDescription?.text = "A diamond has been stolen. Can you find it?"
         
         
         return cell
@@ -77,5 +77,6 @@ class GameListViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
+
 }
 

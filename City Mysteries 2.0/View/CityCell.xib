@@ -52,7 +52,7 @@
                 <outlet property="cityImage" destination="5Qh-t3-w1n" id="dH6-lM-0ep"/>
                 <outlet property="cityName" destination="miM-kl-eFq" id="r8A-dN-GgW"/>
             </connections>
-            <point key="canvasLocation" x="37" y="-109"/>
+            <point key="canvasLocation" x="70" y="-76"/>
         </view>
     </objects>
 </document>
